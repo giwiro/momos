@@ -7,32 +7,24 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import FeedContainer from './src/modules/feed/containers/FeedContainer';
+import {Provider} from 'react-redux';
+import configureStore from './src/store';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import Post from './src/feed/Post';
+const store = configureStore({});
 
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <Provider store={store}>
+        <FeedContainer />
+      </Provider>
+      {/*<StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
+          <Post text="Hi" />
           <Post text="Hi" />
           <Header />
           {global.HermesInternal == null ? null : (
@@ -69,12 +61,12 @@ const App: () => React$Node = () => {
             <LearnMoreLinks />
           </View>
         </ScrollView>
-      </SafeAreaView>
+      </SafeAreaView>*/}
     </>
   );
 };
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
   },
@@ -111,6 +103,6 @@ const styles = StyleSheet.create({
     paddingRight: 12,
     textAlign: 'right',
   },
-});
+});*/
 
 export default App;
