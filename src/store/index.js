@@ -8,11 +8,11 @@ import type {RootState} from '../modules';
 const configureStore = (initialState?: RootState = defaultInitialState) => {
   const middlewares = [];
   // Redux observable
-  // const epic = createEpicMiddleware();
-  // middlewares.push(epic);
+  const epic = createEpicMiddleware();
+  middlewares.push(epic);
   const appliedMiddlewares = applyMiddleware(...middlewares);
   const store = createStore(appReducer, initialState, appliedMiddlewares);
-  // epic.run(rootEpic);
+  epic.run(rootEpic);
   return store;
 };
 

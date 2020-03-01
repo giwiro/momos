@@ -1,15 +1,25 @@
 // @flow
-import {createReducer} from '../../store/utils';
+import {ActionCreator, createReducer} from '../../store/utils';
+import {ofType} from 'redux-observable';
+import {of} from 'rxjs';
+import {catchError, map, switchMap} from 'rxjs/operators';
+import {fetchPostsApi} from './api';
 
 import type {Action} from '../../store/utils';
+import type {ActionsObservable} from 'redux-observable';
+import type {Post} from '../../entities';
+import type {FetchPostApiResponse} from './api';
 
 export type FeedAction = Action & {};
 
 export type FeedState = {
-  isFetching: boolean,
+  isFetching?: boolean,
 };
 
+class FetchPosts extends ActionCreator<FeedAction> {}
+
 const FEED_FETCH_POSTS_REQUEST = 'FEED_FETCH_POSTS_REQUEST';
+const FEED_FETCH_POSTS_SUCCESS = 'FEED_FETCH_POSTS_SUCCESS';
 
 export function fetchPosts() {
   return {
@@ -17,31 +27,38 @@ export function fetchPosts() {
   };
 }
 
+export function fetchPostsSuccess(posts: Post[]) {
+  return {
+    type: FEED_FETCH_POSTS_SUCCESS,
+    posts,
+  };
+}
+
 export const actions = {
-  FEED_FETCH_POSTS_REQUEST,
   fetchPosts,
+  fetchPostsSuccess,
 };
 
 export const initialState = {};
 
-export const r2 = createReducer(initialState, {
-  FEED_FETCH_POSTS_REQUEST: (state: FeedState, action: FeedAction) => ({
+export default createReducer(initialState, {
+  [FetchPosts.type]: (state: FeedState, action: FeedAction) => ({
     isFetching: true,
   }),
 });
 
-export default function reducer(
-  state: FeedState = initialState,
-  action: FeedAction,
-): FeedState {
-  console.log('state', state);
-  console.log('action', action);
-  switch (action.type) {
-    case FEED_FETCH_POSTS_REQUEST:
-      return {
-        isFetching: true,
-      };
-    default:
-      return state;
-  }
-}
+export const fetchPostsEpic = (action$: ActionsObservable) =>
+  action$.pipe(
+    ofType(FEED_FETCH_POSTS_REQUEST),
+    switchMap((action: FeedAction) =>
+      fetchPostsApi().pipe(
+        map((response: FetchPostApiResponse) =>
+          fetchPostsSuccess(response.data),
+        ),
+        catchError(error => {
+          console.log('error: ', error);
+          return of(error);
+        }),
+      ),
+    ),
+  );

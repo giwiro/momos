@@ -10,13 +10,26 @@ export type ReducerMap = {
   [key: string]: Reducer,
 };
 
+export class ActionCreator<T> {
+  payload: T;
+
+  static get type(): string {
+    return `${this.name}`;
+  }
+  constructor(payload: T) {
+    return {
+      type: this.constructor.type,
+      ...payload,
+    };
+  }
+}
+
 export const createReducer = (
   initialState: *,
   reducerMap: ReducerMap,
 ): Reducer => (state: *, action: Action) => {
-  const reducer = reducerMap[action.type];
-  if (!reducer) {
-    return state;
+  if (reducerMap.hasOwnProperty(action.type)) {
+    return reducerMap[action.type](state, action);
   }
-  return reducer(state, action);
+  return state || initialState;
 };
