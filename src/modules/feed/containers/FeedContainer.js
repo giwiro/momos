@@ -7,23 +7,16 @@ import {actions as FeedActions} from '../duck';
 import type {RootState} from '../../index';
 import type {Dispatch} from 'redux';
 
-function mapStateToProps(state: RootState) {
-  return {
+export default connect<*, *, *, *, *, *>(
+  (state: RootState) => ({
     isFetching: state.feed.isFetching,
     posts: state.feed.posts,
-  };
-}
-
-function mapDispatchToProps(dispatch: Dispatch<any>) {
-  return bindActionCreators(
-    {
-      ...FeedActions,
-    },
-    dispatch,
-  );
-}
-
-export default connect<*, *, *, *, *, *>(
-  mapStateToProps,
-  mapDispatchToProps,
+  }),
+  (dispatch: Dispatch<any>) =>
+    bindActionCreators(
+      {
+        ...FeedActions,
+      },
+      dispatch,
+    ),
 )(Feed);

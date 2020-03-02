@@ -7,22 +7,15 @@ import {actions as ErrorActions} from '../duck';
 
 import type {RootState} from '../../index';
 
-function mapStateToProps(state: RootState) {
-  return {
-    error: state.error.error,
-  };
-}
-
-function mapDispatchToProps(dispatch: Dispatch<any>) {
-  return bindActionCreators(
-    {
-      ...ErrorActions,
-    },
-    dispatch,
-  );
-}
-
 export default connect<*, *, *, *, *, *>(
-  mapStateToProps,
-  mapDispatchToProps,
+  (state: RootState) => ({
+    error: state.error.error,
+  }),
+  (dispatch: Dispatch<any>) =>
+    bindActionCreators(
+      {
+        ...ErrorActions,
+      },
+      dispatch,
+    ),
 )(ErrorHandler);
