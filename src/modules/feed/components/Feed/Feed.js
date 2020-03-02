@@ -18,10 +18,13 @@ type Props = {
 
 export default function Feed(props: Props) {
   const {posts, isFetching, fetchPosts} = props;
-  // const postsNodes = posts.map();
+  console.log('fetchPosts', fetchPosts);
   return (
     <SafeAreaView style={feedStyle.container}>
-      <Text>{isFetching ? 'true' : 'false'}</Text>
+      <FlatList
+        data={posts}
+        renderItem={(post: Post) => <Text>{post.slug}</Text>}
+      />
       <Button title="hola" onPress={() => fetchPosts()} />
     </SafeAreaView>
   );

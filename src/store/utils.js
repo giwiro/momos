@@ -11,11 +11,17 @@ export type ReducerMap = {
 };
 
 export class ActionCreator<T> {
-  payload: T;
+  static name: string;
+
+  static get fnName(): string {
+    const name = this.name;
+    return name[0].toLowerCase() + name.slice(1);
+  }
 
   static get type(): string {
     return `${this.name}`;
   }
+
   constructor(payload: T) {
     return {
       type: this.constructor.type,
@@ -23,6 +29,16 @@ export class ActionCreator<T> {
     };
   }
 }
+
+export const generateActionCreators = (
+  classes: Class<ActionCreator>[],
+): {[key: string]: () => void} => {
+  const r = {};
+  classes.forEach(
+    (cls: Class<ActionCreator>) => (r[cls.fnName] = aa => new cls(aa)),
+  );
+  return r;
+};
 
 export const createReducer = (
   initialState: *,
