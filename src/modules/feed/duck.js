@@ -53,11 +53,9 @@ export const fetchPostsEpic = (action$: ActionsObservable) =>
           (response: FetchPostApiResponse) =>
             new FeedFetchPostsSuccess({posts: response.data}),
         ),
-        catchError(error => {
-          const aa = new ErrorSet({error: `Huge error :'v ${error.message}`});
-          console.log('aa', aa);
-          return of(aa);
-        }),
+        catchError(error =>
+          of(new ErrorSet({error: `Huge error :'v ${error.message}`})),
+        ),
       ),
     ),
   );

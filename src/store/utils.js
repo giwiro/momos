@@ -1,6 +1,6 @@
 // @flow
 export type Action = {
-  action: string,
+  type?: string,
   [key: string]: *,
 };
 
@@ -30,15 +30,16 @@ export class ActionCreator<T> {
   }
 }
 
-export const generateActionCreators = (
-  classes: Class<ActionCreator>[],
-): {[key: string]: () => void} => {
+export function generateActionCreators<T>(
+  classes: Class<ActionCreator<T>>[],
+): {[key: string]: () => void} {
   const r = {};
   classes.forEach(
-    (cls: Class<ActionCreator>) => (r[(cls: any).fnName] = aa => new cls(aa)),
+    (cls: Class<ActionCreator<T>>) =>
+      (r[(cls: any).fnName] = aa => new cls(aa)),
   );
   return r;
-};
+}
 
 export const createReducer = (
   initialState: *,
@@ -48,7 +49,7 @@ export const createReducer = (
   if (debug) {
     console.log('[ACTION]:', action);
   }
-  if (reducerMap.hasOwnProperty(action.type)) {
+  if (action.type && reducerMap.hasOwnProperty(action.type)) {
     return reducerMap[action.type](state, action);
   }
   return state || initialState;
