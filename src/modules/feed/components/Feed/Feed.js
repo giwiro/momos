@@ -1,31 +1,28 @@
 // @flow
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {SafeAreaView, FlatList, Text, Button} from 'react-native';
 
 import feedStyle from './Feed.style';
-import Post from '../Post/Post';
 
-/*type Post = {
-  title: string;
-};*/
+import type {Post} from '../../../../entities';
 
 type Props = {
   posts: any[],
   isFetching?: boolean,
-  fetchPosts: () => void,
+  feedFetchPosts: () => void,
 };
 
 export default function Feed(props: Props) {
-  const {posts, isFetching, fetchPosts} = props;
-  console.log('fetchPosts', fetchPosts);
+  const {posts = [], feedFetchPosts} = props;
   return (
     <SafeAreaView style={feedStyle.container}>
       <FlatList
         data={posts}
-        renderItem={(post: Post) => <Text>{post.slug}</Text>}
+        renderItem={({item}: {item: Post}) => <Text>{item.slug}</Text>}
+        keyExtractor={(post: Post) => post.id}
       />
-      <Button title="hola" onPress={() => fetchPosts()} />
+      <Button title="hola" onPress={() => feedFetchPosts()} />
     </SafeAreaView>
   );
 }
@@ -33,5 +30,5 @@ export default function Feed(props: Props) {
 Feed.propTypes = {
   posts: PropTypes.array,
   isFetching: PropTypes.bool,
-  fetchPosts: PropTypes.func.isRequired,
+  feedFetchPosts: PropTypes.func.isRequired,
 };

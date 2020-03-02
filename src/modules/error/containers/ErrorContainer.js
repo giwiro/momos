@@ -1,29 +1,29 @@
 // @flow
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import Feed from '../components/Feed/Feed';
-import {actions as FeedActions} from '../duck';
+import ErrorHandler from '../components/ErrorHandler/ErrorHandler';
+import {actions as ErrorActions} from '../duck';
 
 import type {RootState} from '../../index';
 import type {Dispatch} from 'redux';
 
 function mapStateToProps(state: RootState) {
   return {
-    isFetching: state.feed.isFetching,
-    posts: state.feed.posts,
+    error: state.error.error,
   };
 }
 
 function mapDispatchToProps(dispatch: Dispatch) {
-  return bindActionCreators(
+  const b = bindActionCreators(
     {
-      ...FeedActions,
+      ...ErrorActions,
     },
     dispatch,
   );
+  return b;
 }
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Feed);
+)(ErrorHandler);

@@ -7,18 +7,25 @@ import {
 
 import type {Action} from '../../store/utils';
 
-export type ErrorAction = Action & {};
+export type ErrorAction = Action & {
+  error?: string,
+};
 
-export type ErrorState = {};
+export type ErrorState = {
+  error?: string,
+};
 
 export class ErrorSet extends ActionCreator<ErrorAction> {}
 
-export const actions = generateActionCreators([ErrorSet]);
+export class ErrorUnset extends ActionCreator<ErrorAction> {}
+
+export const actions = generateActionCreators([ErrorSet, ErrorUnset]);
 
 export const initialState = {};
 
 export default createReducer(initialState, {
   [ErrorSet.type]: (state: ErrorState, action: ErrorAction) => ({
-    isFetching: true,
+    error: action.error,
   }),
+  [ErrorUnset.type]: () => initialState,
 });

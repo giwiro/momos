@@ -35,7 +35,7 @@ export const generateActionCreators = (
 ): {[key: string]: () => void} => {
   const r = {};
   classes.forEach(
-    (cls: Class<ActionCreator>) => (r[cls.fnName] = aa => new cls(aa)),
+    (cls: Class<ActionCreator>) => (r[(cls: any).fnName] = aa => new cls(aa)),
   );
   return r;
 };
@@ -43,7 +43,11 @@ export const generateActionCreators = (
 export const createReducer = (
   initialState: *,
   reducerMap: ReducerMap,
+  debug: boolean = false,
 ): Reducer => (state: *, action: Action) => {
+  if (debug) {
+    console.log('[ACTION]:', action);
+  }
   if (reducerMap.hasOwnProperty(action.type)) {
     return reducerMap[action.type](state, action);
   }

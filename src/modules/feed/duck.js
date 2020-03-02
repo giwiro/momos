@@ -21,6 +21,7 @@ export type FeedAction = Action & {
 
 export type FeedState = {
   isFetching?: boolean,
+  posts?: Post[],
 };
 
 export class FeedFetchPosts extends ActionCreator<FeedAction> {}
@@ -38,7 +39,7 @@ export default createReducer(initialState, {
   [FeedFetchPosts.type]: (state: FeedState, action: FeedAction) => ({
     isFetching: true,
   }),
-  [FeedFetchPostsSuccess]: (state: FeedState, action: FeedAction) => ({
+  [FeedFetchPostsSuccess.type]: (state: FeedState, action: FeedAction) => ({
     posts: action.posts,
   }),
 });
@@ -53,8 +54,9 @@ export const fetchPostsEpic = (action$: ActionsObservable) =>
             new FeedFetchPostsSuccess({posts: response.data}),
         ),
         catchError(error => {
-          console.log('error: ', error);
-          return of(new ErrorSet());
+          const aa = new ErrorSet({error: `Huge error :'v ${error.message}`});
+          console.log('aa', aa);
+          return of(aa);
         }),
       ),
     ),
