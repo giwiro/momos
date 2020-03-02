@@ -11,7 +11,11 @@ const configureStore = (initialState?: RootState = defaultInitialState) => {
   const epic = createEpicMiddleware();
   middlewares.push(epic);
   const appliedMiddlewares = applyMiddleware(...middlewares);
-  const store = createStore(appReducer, initialState, appliedMiddlewares);
+  const store = createStore<*, *, *>(
+    appReducer,
+    initialState,
+    appliedMiddlewares,
+  );
   epic.run(rootEpic);
   return store;
 };

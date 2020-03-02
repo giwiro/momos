@@ -22,7 +22,7 @@ export const defaultInitialState = {
 
 export const rootEpic = combineEpics(fetchPostsEpic);
 
-export const appReducer = combineReducers({
+export const appReducer = combineReducers<*, *>({
   feed: feedReducer,
   error,
 });

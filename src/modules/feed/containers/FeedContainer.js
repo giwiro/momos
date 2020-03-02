@@ -14,7 +14,7 @@ function mapStateToProps(state: RootState) {
   };
 }
 
-function mapDispatchToProps(dispatch: Dispatch) {
+function mapDispatchToProps(dispatch: Dispatch<any>) {
   return bindActionCreators(
     {
       ...FeedActions,
@@ -23,7 +23,7 @@ function mapDispatchToProps(dispatch: Dispatch) {
   );
 }
 
-export default connect(
+export default connect<*, *, *, *, *, *>(
   mapStateToProps,
   mapDispatchToProps,
 )(Feed);

@@ -1,11 +1,11 @@
 // @flow
+import type {Dispatch} from 'redux';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import ErrorHandler from '../components/ErrorHandler/ErrorHandler';
 import {actions as ErrorActions} from '../duck';
 
 import type {RootState} from '../../index';
-import type {Dispatch} from 'redux';
 
 function mapStateToProps(state: RootState) {
   return {
@@ -13,17 +13,16 @@ function mapStateToProps(state: RootState) {
   };
 }
 
-function mapDispatchToProps(dispatch: Dispatch) {
-  const b = bindActionCreators(
+function mapDispatchToProps(dispatch: Dispatch<any>) {
+  return bindActionCreators(
     {
       ...ErrorActions,
     },
     dispatch,
   );
-  return b;
 }
 
-export default connect(
+export default connect<*, *, *, *, *, *>(
   mapStateToProps,
   mapDispatchToProps,
 )(ErrorHandler);
