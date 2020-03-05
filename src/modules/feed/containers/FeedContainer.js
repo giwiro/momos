@@ -10,7 +10,8 @@ import type {Dispatch} from 'redux';
 export default connect<*, *, *, *, *, *>(
   (state: RootState) => ({
     isFetching: state.feed.isFetching,
-    posts: state.feed.posts,
+    isFetchingFromTop: state.feed.isFetchingFromTop,
+    posts: state.feed.posts.toList().toJS(),
   }),
   (dispatch: Dispatch<any>) =>
     bindActionCreators(

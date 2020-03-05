@@ -22,7 +22,7 @@ export class ActionCreator<T> {
     return `${this.name}`;
   }
 
-  constructor(payload: T) {
+  constructor(payload?: T = ({}: any)) {
     return {
       type: this.constructor.type,
       ...payload,
