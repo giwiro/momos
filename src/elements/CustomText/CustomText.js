@@ -11,11 +11,6 @@ type Props = {|
   type: $Keys<typeof FONT_TYPES>,
 |};
 
-export const FONT_WEIGHTS = Object.freeze({
-  BOLD: 'bold',
-  NORMAL: 'normal',
-});
-
 export const FONT_TYPES = {
   HEADLINE1: 'HEADLINE1',
   HEADLINE2: 'HEADLINE2',
@@ -36,67 +31,76 @@ const OPEN_SANS_TYPE_STYLE = Object.freeze({
   HEADLINE1: {
     fontSize: 95,
     letterSpacing: -1.5,
+    fontFamily: 'OpenSans-Light',
   },
   HEADLINE2: {
     fontSize: 59,
     letterSpacing: -0.5,
+    fontFamily: 'OpenSans-Light',
   },
   HEADLINE3: {
     fontSize: 48,
     letterSpacing: 0,
+    fontFamily: 'OpenSans-Regular',
   },
   HEADLINE4: {
     fontSize: 34,
     letterSpacing: 0.25,
+    fontFamily: 'OpenSans-Regular',
   },
   HEADLINE5: {
     fontSize: 24,
     letterSpacing: 0,
+    fontFamily: 'OpenSans-Regular',
   },
   HEADLINE6: {
     fontSize: 20,
     letterSpacing: 0.15,
+    fontFamily: 'OpenSans-SemiBold',
   },
   SUBTITLE1: {
     fontSize: 16,
     letterSpacing: 0.15,
+    fontFamily: 'OpenSans-Regular',
   },
   SUBTITLE2: {
     fontSize: 14,
     letterSpacing: 0.1,
+    fontFamily: 'OpenSans-SemiBold',
   },
   BODY1: {
     fontSize: 16,
     letterSpacing: 0.5,
+    fontFamily: 'OpenSans-Regular',
   },
   BODY2: {
     fontSize: 14,
     letterSpacing: 0.25,
+    fontFamily: 'OpenSans-Regular',
   },
   BUTTON: {
     fontSize: 14,
     letterSpacing: 1.25,
+    fontFamily: 'OpenSans-SemiBold',
   },
   CAPTION: {
     fontSize: 12,
     letterSpacing: 0.4,
+    fontFamily: 'OpenSans-Regular',
   },
   OVERLINE: {
     fontSize: 10,
     letterSpacing: 1.5,
+    fontFamily: 'OpenSans-Regular',
   },
 });
 
 export default function CustomText(props: Props) {
   const {style = {}, type} = props;
   const typeStyle = OPEN_SANS_TYPE_STYLE[type];
-  let fontFamily = 'OpenSans';
   if (Platform.OS === 'ios') {
-    fontFamily = 'System';
   }
-  return (
-    <Text style={{...style, ...typeStyle, fontFamily}}>{props.children}</Text>
-  );
+  return <Text style={{...style, ...typeStyle}}>{props.children}</Text>;
 }
 
 CustomText.propTypes = {

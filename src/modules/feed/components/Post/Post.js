@@ -8,7 +8,7 @@ import CustomText, {
 } from '../../../../elements/CustomText/CustomText';
 
 import postStyle from './Post.style';
-import defaultAvatar from '../../../../assets/images/default_avatar.png';
+import defaultAvatar from '../../../../../assets/images/default_avatar.png';
 
 import type {Post as PostType} from '../../../../entities';
 
