@@ -16,11 +16,31 @@ export default StyleSheet.create({
 
     elevation: 3,
   },
+  topContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 8,
+  },
   avatarImage: {
     width: 48,
     height: 48,
     borderRadius: 100,
     borderWidth: 1,
     borderColor: '#E8E8E8',
+    marginRight: 12,
+  },
+  timeAgoText: {
+    color: '#A9A9A9',
+  },
+  titleContainer: {
+    paddingLeft: 8,
+    paddingRight: 8,
+  },
+  mainContainer: {
+    paddingTop: 8,
+  },
+  mainImage: {
+    // width: '100%',
   },
 });

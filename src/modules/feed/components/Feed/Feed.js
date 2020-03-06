@@ -41,9 +41,13 @@ export default function Feed(props: Props) {
     <SafeAreaView style={feedStyle.container}>
       <FlatList
         data={posts}
-        renderItem={({item}: {item: PostType}) => <Post post={item} />}
+        renderItem={({item}: {item: PostType}) => (
+          <View style={feedStyle.postContainer}>
+            <Post post={item} />
+          </View>
+        )}
         keyExtractor={(post: PostType) => post.id}
-        numColumns={2}
+        numColumns={1}
         ItemSeparatorComponent={() => (
           <View style={feedStyle.separatorContainer} />
         )}
@@ -59,15 +63,15 @@ export default function Feed(props: Props) {
         onEndReached={() => secureFetchPosts(false)}
         ListFooterComponent={() =>
           posts.length && isFetching ? (
-            <View>
-              <ActivityIndicator size="small" color="#0000ff" />
+            <View style={feedStyle.footerLoadingContainer}>
+              <ActivityIndicator size="large" color="#5831DF" />
             </View>
           ) : null
         }
       />
       {posts.length === 0 && isFetching && (
         <View style={feedStyle.loadingContainer}>
-          <ActivityIndicator size="large" color="#0000ff" />
+          <ActivityIndicator size="large" color="#5831DF" />
         </View>
       )}
     </SafeAreaView>

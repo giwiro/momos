@@ -14,4 +14,7 @@ export type Post = {
     display_name: string,
     is_verified: string,
   },
+  trending_datetime: string,
+  import_datetime: string,
+  title: string,
 };
