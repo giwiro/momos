@@ -20,7 +20,6 @@ export default StyleSheet.create({
   logo: {
     width: LOGO_WIDTH,
     height: Math.round((LOGO_WIDTH * 156) / 397),
-    border: 0,
   },
   buttonContainer: {
     paddingTop: 130,
