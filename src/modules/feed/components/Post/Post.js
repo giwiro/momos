@@ -6,6 +6,7 @@ import FastImage from 'react-native-fast-image';
 import moment from 'moment';
 import CustomText, {
   FONT_TYPES,
+  FONT_WEIGHTS,
 } from '../../../../elements/CustomText/CustomText';
 
 import postStyle from './Post.style';
@@ -66,7 +67,9 @@ function Post(props: Props) {
         </View>
       </View>
       <View style={postStyle.titleContainer}>
-        <CustomText type={FONT_TYPES.HEADLINE6}>{post.title}</CustomText>
+        <CustomText type={FONT_TYPES.HEADLINE6} weight={FONT_WEIGHTS.BOLD}>
+          {post.title}
+        </CustomText>
       </View>
 
       <View style={postStyle.mainContainer}>

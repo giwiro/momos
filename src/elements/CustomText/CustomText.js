@@ -9,7 +9,16 @@ type Props = {|
   children: Node,
   style?: {[key: string]: string},
   type: $Keys<typeof FONT_TYPES>,
+  weight?: $Keys<typeof FONT_WEIGHTS>,
 |};
+
+export const FONT_WEIGHTS = {
+  BOLD: 'BOLD',
+  EXTRA_BOLD: 'EXTRA_BOLD',
+  LIGHT: 'LIGHT',
+  REGULAR: 'REGULAR',
+  SEMI_BOLD: 'SEMI_BOLD',
+};
 
 export const FONT_TYPES = {
   HEADLINE1: 'HEADLINE1',
@@ -27,6 +36,7 @@ export const FONT_TYPES = {
   OVERLINE: 'OVERLINE',
 };
 
+// Open Sans
 const OPEN_SANS_TYPE_STYLE = Object.freeze({
   HEADLINE1: {
     fontSize: 95,
@@ -108,6 +118,25 @@ const OPEN_SANS_TYPE_STYLE = Object.freeze({
   },
 });
 
+const OPEN_SANS_WEIGHT_STYLE = Object.freeze({
+  BOLD: {
+    fontFamily: 'OpenSans-Bold',
+  },
+  EXTRA_BOLD: {
+    fontFamily: 'OpenSans-ExtraBold',
+  },
+  LIGHT: {
+    fontFamily: 'OpenSans-Light',
+  },
+  REGULAR: {
+    fontFamily: 'OpenSans-Regular',
+  },
+  SEMI_BOLD: {
+    fontFamily: 'OpenSans-SemiBold',
+  },
+});
+
+// San Francisco
 const SAN_FRANCISCO_TYPE_STYLE = Object.freeze({
   HEADLINE1: {
     fontSize: 95,
@@ -202,17 +231,48 @@ const SAN_FRANCISCO_TYPE_STYLE = Object.freeze({
   },
 });
 
+const SAN_FRANCISCO_WEIGHT_STYLE = Object.freeze({
+  BOLD: {
+    fontWeight: '700',
+  },
+  EXTRA_BOLD: {
+    fontFamily: '800',
+  },
+  LIGHT: {
+    fontFamily: '300',
+  },
+  REGULAR: {
+    fontFamily: '400',
+  },
+  SEMI_BOLD: {
+    fontFamily: '600',
+  },
+});
+
 export default function CustomText(props: Props) {
-  const {style = {}, type} = props;
+  const {style = {}, type, weight} = props;
   let typeStyle = OPEN_SANS_TYPE_STYLE[type];
+  let weightStyle = {};
   if (Platform.OS === 'ios') {
     typeStyle = SAN_FRANCISCO_TYPE_STYLE[type];
   }
-  return <Text style={{...style, ...(typeStyle: any)}}>{props.children}</Text>;
+  if (weight) {
+    if (Platform.OS === 'ios') {
+      weightStyle = SAN_FRANCISCO_WEIGHT_STYLE[weight];
+    } else {
+      weightStyle = OPEN_SANS_WEIGHT_STYLE[weight];
+    }
+  }
+  return (
+    <Text style={{...style, ...(typeStyle: any), ...(weightStyle: any)}}>
+      {props.children}
+    </Text>
+  );
 }
 
 CustomText.propTypes = {
   children: PropTypes.node.isRequired,
   style: PropTypes.object,
   type: PropTypes.string.isRequired,
+  weight: PropTypes.string,
 };
