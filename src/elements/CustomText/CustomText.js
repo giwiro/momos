@@ -108,12 +108,107 @@ const OPEN_SANS_TYPE_STYLE = Object.freeze({
   },
 });
 
+const SAN_FRANCISCO_TYPE_STYLE = Object.freeze({
+  HEADLINE1: {
+    fontSize: 95,
+    // letterSpacing: -1.5,
+    fontFamily: 'System',
+    fontWeight: '300',
+    color: '#5831DF',
+  },
+  HEADLINE2: {
+    fontSize: 59,
+    // letterSpacing: -0.5,
+    fontFamily: 'System',
+    fontWeight: '300',
+    color: '#5831DF',
+  },
+  HEADLINE3: {
+    fontSize: 48,
+    // letterSpacing: 0,
+    fontWeight: '400',
+    fontFamily: 'System',
+    color: '#5831DF',
+  },
+  HEADLINE4: {
+    fontSize: 34,
+    // letterSpacing: 0.25,
+    fontWeight: '400',
+    fontFamily: 'System',
+    color: '#5831DF',
+  },
+  HEADLINE5: {
+    fontSize: 24,
+    // letterSpacing: 0,
+    fontWeight: '400',
+    fontFamily: 'System',
+    color: '#5831DF',
+  },
+  HEADLINE6: {
+    fontSize: 20,
+    // letterSpacing: 0.15,
+    fontWeight: '500',
+    fontFamily: 'System',
+    color: '#5831DF',
+  },
+  SUBTITLE1: {
+    fontSize: 16,
+    // letterSpacing: 0.15,
+    fontWeight: '400',
+    fontFamily: 'System',
+    color: '#5831DF',
+  },
+  SUBTITLE2: {
+    fontSize: 14,
+    // letterSpacing: 0.1,
+    fontWeight: '500',
+    fontFamily: 'System',
+    color: '#5831DF',
+  },
+  BODY1: {
+    fontSize: 16,
+    // letterSpacing: 0.5,
+    fontWeight: '400',
+    fontFamily: 'System',
+    color: '#5831DF',
+  },
+  BODY2: {
+    fontSize: 14,
+    // letterSpacing: 0.25,
+    fontWeight: '400',
+    fontFamily: 'System',
+    color: '#5831DF',
+  },
+  BUTTON: {
+    fontSize: 14,
+    // letterSpacing: 1.25,
+    fontWeight: '500',
+    fontFamily: 'System',
+    color: '#FFFFFFFF',
+  },
+  CAPTION: {
+    fontSize: 12,
+    // letterSpacing: 0.4,
+    fontWeight: '400',
+    fontFamily: 'System',
+    color: '#9D82FA',
+  },
+  OVERLINE: {
+    fontSize: 10,
+    // letterSpacing: 1.5,
+    fontWeight: '400',
+    fontFamily: 'System',
+    color: '#9D82FA',
+  },
+});
+
 export default function CustomText(props: Props) {
   const {style = {}, type} = props;
-  const typeStyle = OPEN_SANS_TYPE_STYLE[type];
+  let typeStyle = OPEN_SANS_TYPE_STYLE[type];
   if (Platform.OS === 'ios') {
+    typeStyle = SAN_FRANCISCO_TYPE_STYLE[type];
   }
-  return <Text style={{...style, ...typeStyle}}>{props.children}</Text>;
+  return <Text style={{...style, ...(typeStyle: any)}}>{props.children}</Text>;
 }
 
 CustomText.propTypes = {
