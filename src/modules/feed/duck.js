@@ -17,17 +17,17 @@ import type {Post} from '../../entities';
 import type {FetchPostApiResponse} from './api';
 import type {RootState} from '../index';
 
-export type FeedAction = Action & {
+export type FeedAction = Action & {|
   posts?: Post[],
   fetchFromTop?: boolean,
-};
+|};
 
-export type FeedState = {
+export type FeedState = {|
   isFetching?: boolean,
   isFetchingFromTop?: boolean,
   lastRequestDate?: number,
   posts: OrderedMap<string, Post>,
-};
+|};
 
 export class FeedFetchPosts extends ActionCreator<FeedAction> {}
 
