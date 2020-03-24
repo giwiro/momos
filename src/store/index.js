@@ -1,6 +1,6 @@
 // @flow
 import {createStore, applyMiddleware} from 'redux';
-import {defaultInitialState, rootEpic, appReducer} from '../modules';
+import {defaultInitialState, rootEpic, persistedReducer} from '../modules';
 import {createEpicMiddleware} from 'redux-observable';
 
 import type {RootState} from '../modules';
@@ -12,7 +12,7 @@ const configureStore = (initialState?: RootState = defaultInitialState) => {
   middlewares.push(epic);
   const appliedMiddlewares = applyMiddleware(...middlewares);
   const store = createStore<*, *, *>(
-    appReducer,
+    persistedReducer,
     initialState,
     appliedMiddlewares,
   );

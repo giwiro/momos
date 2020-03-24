@@ -1,6 +1,9 @@
 // @flow
 import {combineReducers} from 'redux';
 import {combineEpics} from 'redux-observable';
+import AsyncStorage from '@react-native-community/async-storage';
+import {persistStore, persistReducer} from 'redux-persist';
+import {immutableTransform} from '../utils';
 import userReducer, {initialState as userInitialState} from './user/duck';
 import feedReducer, {
   initialState as feedInitialState,
@@ -18,6 +21,12 @@ export type RootState = {
   error: ErrorState,
 };
 
+const persistConfig = {
+  transforms: [immutableTransform()],
+  key: 'root',
+  storage: AsyncStorage,
+};
+
 export const defaultInitialState = {
   user: userInitialState,
   feed: feedInitialState,
@@ -31,3 +40,5 @@ export const appReducer = combineReducers<*, *>({
   feed: feedReducer,
   error,
 });
+
+export const persistedReducer = persistReducer<*, *>(persistConfig, appReducer);

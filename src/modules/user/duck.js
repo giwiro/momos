@@ -15,9 +15,7 @@ export type UserState = {|
 
 export class UserUseFirstTime extends ActionCreator<UserAction> {}
 
-export const actions = generateActionCreators([
-  UserUseFirstTime,
-]);
+export const actions = generateActionCreators([UserUseFirstTime]);
 
 export const initialState = {
   firstTime: true,

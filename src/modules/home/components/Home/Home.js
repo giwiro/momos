@@ -42,39 +42,42 @@ export default function Home(props: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <SafeAreaView style={homeStyle.container}>
-      <View style={homeStyle.backgroundVideoContainer}>
-        <Video
-          source={bgVideo}
-          muted={true}
-          repeat={true}
-          resizeMode={'cover'}
-          rate={1.0}
-          ignoreSilentSwitch={'obey'}
-          style={homeStyle.backgroundVideo}
-        />
-      </View>
-      <View style={homeStyle.topContainer}>
-        <Image style={homeStyle.logo} source={logo} resizeMode="stretch" />
-      </View>
-      <Animated.View style={{...homeStyle.buttonContainer, opacity: fadeAnim}}>
-        <TouchableOpacity
-          style={homeStyle.button}
-          activeOpacity={0.5}
-          onPress={() => {
-            userUseFirstTime();
-            navigation.dispatch(StackActions.replace('Feed'));
-          }}>
-          <LinearGradient
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}
-            colors={['#5323E2', '#A169FE']}
-            style={homeStyle.linearGradient}>
-            <CustomText type={FONT_TYPES.BUTTON}>I WANT FUN</CustomText>
-          </LinearGradient>
-        </TouchableOpacity>
-      </Animated.View>
-    </SafeAreaView>
+    firstTime && (
+      <SafeAreaView style={homeStyle.container}>
+        <View style={homeStyle.backgroundVideoContainer}>
+          <Video
+            source={bgVideo}
+            muted={true}
+            repeat={true}
+            resizeMode={'cover'}
+            rate={1.0}
+            ignoreSilentSwitch={'obey'}
+            style={homeStyle.backgroundVideo}
+          />
+        </View>
+        <View style={homeStyle.topContainer}>
+          <Image style={homeStyle.logo} source={logo} resizeMode="stretch" />
+        </View>
+        <Animated.View
+          style={{...homeStyle.buttonContainer, opacity: fadeAnim}}>
+          <TouchableOpacity
+            style={homeStyle.button}
+            activeOpacity={0.5}
+            onPress={() => {
+              userUseFirstTime();
+              navigation.dispatch(StackActions.replace('Feed'));
+            }}>
+            <LinearGradient
+              start={{x: 0, y: 0}}
+              end={{x: 1, y: 0}}
+              colors={['#5323E2', '#A169FE']}
+              style={homeStyle.linearGradient}>
+              <CustomText type={FONT_TYPES.BUTTON}>I WANT FUN</CustomText>
+            </LinearGradient>
+          </TouchableOpacity>
+        </Animated.View>
+      </SafeAreaView>
+    )
   );
 }
 

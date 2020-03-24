@@ -7,6 +7,8 @@
  */
 import 'react-native-gesture-handler';
 import React from 'react';
+import {persistStore} from 'redux-persist';
+import {PersistGate} from 'redux-persist/integration/react';
 import FeedContainer from './src/modules/feed/containers/FeedContainer';
 import ErrorContainer from './src/modules/error/containers/ErrorContainer';
 import HomeContainer from './src/modules/home/containers/HomeContainer';
@@ -18,6 +20,7 @@ import configureStore from './src/store';
 // Here put the initialState persisted
 let initialState = undefined;
 const store = configureStore(initialState);
+const persistor = persistStore(store);
 
 const Stack = createStackNavigator();
 
@@ -25,15 +28,19 @@ const App = () => {
   return (
     <NavigationContainer>
       <Provider store={store}>
-        <ErrorContainer />
-        <Stack.Navigator
-          screenOptions={{
-            headerShown: false,
-            initialRouteName: 'Home',
-          }}>
-          <Stack.Screen name="Home" component={HomeContainer} />
-          <Stack.Screen name="Feed" component={FeedContainer} />
-        </Stack.Navigator>
+        <PersistGate loading={null} persistor={persistor}>
+          <>
+            <ErrorContainer />
+            <Stack.Navigator
+              screenOptions={{
+                headerShown: false,
+                initialRouteName: 'Home',
+              }}>
+              <Stack.Screen name="Home" component={HomeContainer} />
+              <Stack.Screen name="Feed" component={FeedContainer} />
+            </Stack.Navigator>
+          </>
+        </PersistGate>
       </Provider>
     </NavigationContainer>
   );
