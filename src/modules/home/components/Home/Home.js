@@ -17,7 +17,7 @@ import CustomText, {
 
 import homeStyle from './Home.style';
 import logo from '../../../../../assets/images/logo.png';
-import bgVideo from '../../../../../assets/videos/Ski-Day.mp4';
+import bgVideo from '../../../../../assets/videos/momo_bg_video.mp4';
 
 import type {NavigationProp} from '@react-navigation/core';
 
@@ -44,7 +44,6 @@ export default function Home(props: Props) {
   return (
     <SafeAreaView style={homeStyle.container}>
       <View style={homeStyle.backgroundVideoContainer}>
-        <View style={homeStyle.backgroundTint} />
         <Video
           source={bgVideo}
           muted={true}

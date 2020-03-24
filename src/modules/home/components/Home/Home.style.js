@@ -20,6 +20,7 @@ export default StyleSheet.create({
   logo: {
     width: LOGO_WIDTH,
     height: Math.round((LOGO_WIDTH * 156) / 397),
+    marginBottom: 125,
   },
   buttonContainer: {
     paddingTop: 130,
@@ -42,18 +43,9 @@ export default StyleSheet.create({
     left: 0,
     bottom: 0,
     right: 0,
-  },
-  backgroundTint: {
-    flex: 1,
     backgroundColor: 'white',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0,
   },
   backgroundVideo: {
     flex: 1,
-    opacity: 0.11,
   },
 });
