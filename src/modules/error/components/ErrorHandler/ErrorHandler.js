@@ -1,5 +1,4 @@
 // @flow
-import React from 'react';
 import PropTypes from 'prop-types';
 import {Platform, Alert, ToastAndroid} from 'react-native';
 import {usePrevious} from '../../../../utils';

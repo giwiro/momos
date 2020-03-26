@@ -44,7 +44,7 @@ export const initialState = {
   posts: new OrderedMap<string, Post>(),
 };
 
-const PAGE_SIZE_LIMIT = 30;
+export const PAGE_SIZE_LIMIT = 30;
 export const NUM_POSTS_LIMIT = 150;
 
 export default createReducer(
@@ -59,11 +59,19 @@ export default createReducer(
       const om = OrderedMap<string, Post>(
         action.posts.map((post: Post) => [post.id, post]),
       );
-      const r = action.fetchFromTop
-        ? om.merge(state.posts)
-        : state.posts.merge(om);
+      let p = om;
+      if (
+        typeof state.lastRequestDate === 'number' &&
+        Math.abs(state.lastRequestDate - Date.now()) < 86400000
+      ) {
+        p =
+          action.fetchFromTop && state.posts
+            ? om.merge(state.posts)
+            : state.posts.merge(om);
+      }
+
       return {
-        posts: r.slice(0, NUM_POSTS_LIMIT),
+        posts: p.slice(0, NUM_POSTS_LIMIT),
         lastRequestDate: Date.now(),
         isFetching: false,
         isFetchingFromTop: false,
@@ -88,10 +96,10 @@ export const fetchPostsEpic = (
       fetchPostsApi({
         auth: true,
         queryParams: {
-          limit: PAGE_SIZE_LIMIT,
+          limit: `${PAGE_SIZE_LIMIT}`,
           offset:
             action.fetchFromTop || state$.value.feed.posts.size === 0
-              ? 0
+              ? '0'
               : state$.value.feed.posts.size + 1,
         },
       }).pipe(

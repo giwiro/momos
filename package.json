@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "flow": "flow status"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.8.1",
@@ -36,21 +37,36 @@
     "rxjs": "^6.5.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/runtime": "^7.6.2",
+    "@babel/core": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
     "@react-native-community/eslint-config": "^0.0.5",
     "@types/node": "^13.7.6",
     "babel-jest": "^25.1.0",
-    "jest": "^25.1.0",
     "eslint": "^6.5.1",
     "flow-bin": "^0.119.1",
     "flow-typed": "^3.0.0",
+    "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.56.0",
+    "mock-async-storage": "^2.2.0",
     "prop-types": "^15.7.2",
     "react-redux": "^7.2.0",
     "react-test-renderer": "16.9.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js",
+      "<rootDir>/__mocks__/@react-native-community/jestSetupFile.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|redux-persist|@react-native-community))"
+    ],
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
   }
 }

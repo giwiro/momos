@@ -2,7 +2,7 @@
 import {combineReducers} from 'redux';
 import {combineEpics} from 'redux-observable';
 import AsyncStorage from '@react-native-community/async-storage';
-import {persistStore, persistReducer} from 'redux-persist';
+import {persistReducer} from 'redux-persist';
 import {immutableTransform} from '../utils';
 import userReducer, {initialState as userInitialState} from './user/duck';
 import feedReducer, {

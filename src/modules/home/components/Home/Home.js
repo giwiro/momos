@@ -47,11 +47,11 @@ export default function Home(props: Props) {
         <View style={homeStyle.backgroundVideoContainer}>
           <Video
             source={bgVideo}
-            muted={true}
-            repeat={true}
-            resizeMode={'cover'}
+            muted
+            repeat
+            resizeMode="cover"
             rate={1.0}
-            ignoreSilentSwitch={'obey'}
+            ignoreSilentSwitch="obey"
             style={homeStyle.backgroundVideo}
           />
         </View>

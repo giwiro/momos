@@ -18,6 +18,7 @@ node_modules/warning/.*
 [untyped]
 .*/node_modules/@react-native-community/cli/.*/.*
 .*/node_modules/react-native/Libraries/.*
+.*/node_modules/redux-persist/lib.*
 
 [include]
 

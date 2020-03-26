@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Action creators should return an action to erase the first time flag 1`] = `
+Object {
+  "type": "UserUseFirstTime",
+}
+`;
+
+exports[`Reducer should return initialState 1`] = `
+Object {
+  "firstTime": true,
+}
+`;
+
+exports[`Reducer should return the state with error set 1`] = `
+Object {
+  "firstTime": false,
+}
+`;

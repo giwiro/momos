@@ -1,0 +1,1979 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render correctly BODY1 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 16,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY1 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 16,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY1 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY1 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY1 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY1 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY1 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY1 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY1 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY1 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 14,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 14,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 14,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 14,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 14,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 14,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 14,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 14,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 14,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BODY2 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 14,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "System",
+      "fontSize": 14,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "System",
+      "fontSize": 14,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "800",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "800",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "300",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "300",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "400",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "400",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "600",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly BUTTON with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FFFFFFFF",
+      "fontFamily": "600",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "System",
+      "fontSize": 12,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "System",
+      "fontSize": 12,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "800",
+      "fontSize": 12,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "800",
+      "fontSize": 12,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "300",
+      "fontSize": 12,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "300",
+      "fontSize": 12,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "400",
+      "fontSize": 12,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "400",
+      "fontSize": 12,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "600",
+      "fontSize": 12,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly CAPTION with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "600",
+      "fontSize": 12,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 95,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 95,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 95,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 95,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 95,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 95,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 95,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 95,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 95,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE1 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 95,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 59,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 59,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 59,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 59,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 59,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 59,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 59,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 59,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 59,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE2 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 59,
+      "fontWeight": "300",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 48,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 48,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 48,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 48,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 48,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 48,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 48,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 48,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 48,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE3 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 48,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 34,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 34,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 34,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 34,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 34,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 34,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 34,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 34,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 34,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE4 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 34,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 24,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 24,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 24,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 24,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 24,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 24,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 24,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 24,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 24,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE5 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 24,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 20,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 20,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 20,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 20,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 20,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 20,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 20,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 20,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 20,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly HEADLINE6 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 20,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "System",
+      "fontSize": 10,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "System",
+      "fontSize": 10,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "800",
+      "fontSize": 10,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "800",
+      "fontSize": 10,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "300",
+      "fontSize": 10,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "300",
+      "fontSize": 10,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "400",
+      "fontSize": 10,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "400",
+      "fontSize": 10,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "600",
+      "fontSize": 10,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly OVERLINE with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#9D82FA",
+      "fontFamily": "600",
+      "fontSize": 10,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 16,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 16,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE1 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 16,
+      "fontWeight": "400",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 14,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "System",
+      "fontSize": 14,
+      "fontWeight": "700",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with EXTRA_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with EXTRA_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "800",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with LIGHT on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with LIGHT on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "300",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with REGULAR on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with REGULAR on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "400",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with SEMI_BOLD on android 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`Should render correctly SUBTITLE2 with SEMI_BOLD on ios 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#5831DF",
+      "fontFamily": "600",
+      "fontSize": 14,
+      "fontWeight": "500",
+    }
+  }
+>
+  This is a text sample
+</Text>
+`;
+
+exports[`should return all font types 1`] = `
+Object {
+  "BODY1": "BODY1",
+  "BODY2": "BODY2",
+  "BUTTON": "BUTTON",
+  "CAPTION": "CAPTION",
+  "HEADLINE1": "HEADLINE1",
+  "HEADLINE2": "HEADLINE2",
+  "HEADLINE3": "HEADLINE3",
+  "HEADLINE4": "HEADLINE4",
+  "HEADLINE5": "HEADLINE5",
+  "HEADLINE6": "HEADLINE6",
+  "OVERLINE": "OVERLINE",
+  "SUBTITLE1": "SUBTITLE1",
+  "SUBTITLE2": "SUBTITLE2",
+}
+`;
+
+exports[`should return all font weights 1`] = `
+Object {
+  "BOLD": "BOLD",
+  "EXTRA_BOLD": "EXTRA_BOLD",
+  "LIGHT": "LIGHT",
+  "REGULAR": "REGULAR",
+  "SEMI_BOLD": "SEMI_BOLD",
+}
+`;

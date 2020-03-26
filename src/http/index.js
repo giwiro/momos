@@ -1,4 +1,4 @@
-// @flowgetCreator
+// @flow
 import {ajax} from 'rxjs/ajax';
 import queryString from 'query-string';
 
@@ -11,9 +11,8 @@ export type RequestOptions = {|
 
 function httpCreatorFactory(
   route: string,
-  o?: GetRequestOptions,
+  o?: RequestOptions,
 ): Observable<any> {
-  // api_key=fFhPABg0GwQnR23KvPMokjM3PmGbScYR&limit=30&offset=10
   let url = route;
   let queryParams = {};
 
@@ -22,7 +21,7 @@ function httpCreatorFactory(
       queryParams.api_key = 'fFhPABg0GwQnR23KvPMokjM3PmGbScYR';
     }
     if (o.queryParams) {
-      queryParams = {...queryParams, ...o.queryParams};
+      queryParams = {...o.queryParams, ...queryParams};
     }
   }
 
@@ -30,7 +29,6 @@ function httpCreatorFactory(
     url = `${url}?${queryString.stringify(queryParams)}`;
   }
 
-  console.log('REQ: ', url);
   return ajax.getJSON(url);
 }
 

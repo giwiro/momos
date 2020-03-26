@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionCreator should return an appended payload 1`] = `
+Object {
+  "foo": "bar",
+  "type": "ActionCreator",
+}
+`;
+
+exports[`ActionCreator should return correct class name as type property 1`] = `"ActionCreator"`;
+
+exports[`ActionCreator should return correct function name 1`] = `"actionCreator"`;
+
+exports[`createReducer should create the reducer 1`] = `[Function]`;
+
+exports[`createReducer should execute correctly the reducer 1`] = `
+Object {
+  "foo": "bar",
+}
+`;
+
+exports[`generateActionCreators should execute the generated function 1`] = `
+Object {
+  "type": "ActionCreator",
+}
+`;
+
+exports[`generateActionCreators should generate function map from generate action creators 1`] = `
+Object {
+  "actionCreator": [Function],
+}
+`;

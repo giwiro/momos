@@ -18,8 +18,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import configureStore from './src/store';
 
 // Here put the initialState persisted
-let initialState = undefined;
-const store = configureStore(initialState);
+const store = configureStore();
 const persistor = persistStore(store);
 
 const Stack = createStackNavigator();

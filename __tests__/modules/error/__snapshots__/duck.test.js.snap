@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Action creators should return an action to unset th error 1`] = `
+Object {
+  "type": "ErrorUnset",
+}
+`;
+
+exports[`Action creators should return an action with error 1`] = `
+Object {
+  "error": "Sample error text",
+  "type": "ErrorSet",
+}
+`;
+
+exports[`Reducer should return initialState 1`] = `Object {}`;
+
+exports[`Reducer should return the state with error set 1`] = `
+Object {
+  "error": "Sample error text",
+}
+`;
+
+exports[`Reducer should return the state with no error 1`] = `Object {}`;

@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Action creators should return an action to fetch posts 1`] = `
+Object {
+  "type": "FeedFetchPosts",
+}
+`;
+
+exports[`Action creators should return an action to fetch posts error 1`] = `
+Object {
+  "type": "FeedFetchPostsError",
+}
+`;
+
+exports[`Action creators should return an action to fetch posts success 1`] = `
+Object {
+  "fetchFromTop": true,
+  "posts": Array [
+    Object {
+      "bitly_gif_url": "https:\\\\/\\\\/gph.is\\\\/2mmhfxf",
+      "bitly_url": "https:\\\\/\\\\/gph.is\\\\/2mmhfxf",
+      "content_url": "",
+      "embed_url": "https:\\\\/\\\\/giphy.com\\\\/embed\\\\/2fPig3PMSsZqIbq0Tc",
+      "id": "2fPig3PMSsZqIbq0Tc",
+      "images": Object {
+        "analytics": Object {
+          "consent": Object {
+            "url": "https:\\\\/\\\\/giphy-analytics.giphy.com\\\\/simple_analytics?response_id=3af3077f5a679962db54a09c17ddc5c6b6fa5d7a&event_type=GIF_TRENDING&gif_id=2fPig3PMSsZqIbq0Tc&action_type=SENT",
+          },
+          "onclick": Object {
+            "url": "https:\\\\/\\\\/giphy-analytics.giphy.com\\\\/simple_analytics?response_id=3af3077f5a679962db54a09c17ddc5c6b6fa5d7a&event_type=GIF_TRENDING&gif_id=2fPig3PMSsZqIbq0Tc&action_type=CLICK",
+          },
+          "onload": Object {
+            "url": "https:\\\\/\\\\/giphy-analytics.giphy.com\\\\/simple_analytics?response_id=3af3077f5a679962db54a09c17ddc5c6b6fa5d7a&event_type=GIF_TRENDING&gif_id=2fPig3PMSsZqIbq0Tc&action_type=SEEN",
+          },
+        },
+        "analytics_response_payload": "e=Z2lmX2lkPTJmUGlnM1BNU3NacUlicTBUYyZldmVudF90eXBlPUdJRl9UUkVORElORyZjaWQ9NGE2MGFiMDQzYWYzMDc3ZjVhNjc5OTYyZGI1NGEwOWMxN2RkYzVjNmI2ZmE1ZDdh",
+        "downsized_large": Object {
+          "height": "347",
+          "size": "63193",
+          "url": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy.gif?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy.gif",
+          "width": "480",
+        },
+        "fixed_height_small_still": Object {
+          "height": "100",
+          "size": "6541",
+          "url": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/100_s.gif?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=100_s.gif",
+          "width": "139",
+        },
+        "hd": Object {
+          "height": "1388",
+          "mp4": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy-hd.mp4?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy-hd.mp4",
+          "mp4_size": "409144",
+          "width": "1920",
+        },
+        "original": Object {
+          "frames": "3",
+          "hash": "8b4f0894ae3c31235a56fb6ea3ba06e8",
+          "height": "347",
+          "mp4": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy.mp4?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy.mp4",
+          "mp4_size": "65578",
+          "size": "63193",
+          "url": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy.gif?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy.gif",
+          "webp": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy.webp?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy.webp",
+          "webp_size": "60870",
+          "width": "480",
+        },
+        "user": Object {
+          "avatar_url": "https:\\\\/\\\\/media3.giphy.com\\\\/avatars\\\\/carawrrr\\\\/nZ9QpWObQIAE.jpg",
+          "banner_url": "",
+          "display_name": "Carawrrr",
+          "is_verified": true,
+          "profile_url": "https:\\\\/\\\\/giphy.com\\\\/carawrrr\\\\/",
+          "username": "carawrrr",
+        },
+      },
+      "import_datetime": "2018-07-16 15:11:56",
+      "is_sticker": 1,
+      "rating": "g",
+      "slug": "thanks-thank-you-2fPig3PMSsZqIbq0Tc",
+      "source": "www.carawrrr.com",
+      "source_post_url": "www.carawrrr.com",
+      "source_tld": "",
+      "title": "Thanks Thank You Sticker by Carawrrr",
+      "trending_datetime": "2020-03-25 22:00:28",
+      "type": "gif",
+      "url": "https:\\\\/\\\\/giphy.com\\\\/stickers\\\\/thanks-thank-you-2fPig3PMSsZqIbq0Tc",
+      "username": "carawrrr",
+    },
+  ],
+  "type": "FeedFetchPostsSuccess",
+}
+`;
+
+exports[`Reducer should return initialState 1`] = `
+Object {
+  "posts": Immutable.OrderedMap {},
+}
+`;
+
+exports[`Reducer should return the state with is loading 1`] = `
+Object {
+  "isFetching": true,
+  "isFetchingFromTop": false,
+  "posts": Immutable.OrderedMap {},
+}
+`;
+
+exports[`Reducer should return the state with is loading from top 1`] = `
+Object {
+  "isFetching": true,
+  "isFetchingFromTop": true,
+  "posts": Immutable.OrderedMap {},
+}
+`;
+
+exports[`Reducer should return the state with the posts when there were none 1`] = `
+Object {
+  "isFetching": false,
+  "isFetchingFromTop": false,
+  "lastRequestDate": 1585202345469,
+  "posts": Immutable.OrderedMap {
+    "2fPig3PMSsZqIbq0Tc": Object {
+      "bitly_gif_url": "https:\\\\/\\\\/gph.is\\\\/2mmhfxf",
+      "bitly_url": "https:\\\\/\\\\/gph.is\\\\/2mmhfxf",
+      "content_url": "",
+      "embed_url": "https:\\\\/\\\\/giphy.com\\\\/embed\\\\/2fPig3PMSsZqIbq0Tc",
+      "id": "2fPig3PMSsZqIbq0Tc",
+      "images": Object {
+        "analytics": Object {
+          "consent": Object {
+            "url": "https:\\\\/\\\\/giphy-analytics.giphy.com\\\\/simple_analytics?response_id=3af3077f5a679962db54a09c17ddc5c6b6fa5d7a&event_type=GIF_TRENDING&gif_id=2fPig3PMSsZqIbq0Tc&action_type=SENT",
+          },
+          "onclick": Object {
+            "url": "https:\\\\/\\\\/giphy-analytics.giphy.com\\\\/simple_analytics?response_id=3af3077f5a679962db54a09c17ddc5c6b6fa5d7a&event_type=GIF_TRENDING&gif_id=2fPig3PMSsZqIbq0Tc&action_type=CLICK",
+          },
+          "onload": Object {
+            "url": "https:\\\\/\\\\/giphy-analytics.giphy.com\\\\/simple_analytics?response_id=3af3077f5a679962db54a09c17ddc5c6b6fa5d7a&event_type=GIF_TRENDING&gif_id=2fPig3PMSsZqIbq0Tc&action_type=SEEN",
+          },
+        },
+        "analytics_response_payload": "e=Z2lmX2lkPTJmUGlnM1BNU3NacUlicTBUYyZldmVudF90eXBlPUdJRl9UUkVORElORyZjaWQ9NGE2MGFiMDQzYWYzMDc3ZjVhNjc5OTYyZGI1NGEwOWMxN2RkYzVjNmI2ZmE1ZDdh",
+        "downsized_large": Object {
+          "height": "347",
+          "size": "63193",
+          "url": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy.gif?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy.gif",
+          "width": "480",
+        },
+        "fixed_height_small_still": Object {
+          "height": "100",
+          "size": "6541",
+          "url": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/100_s.gif?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=100_s.gif",
+          "width": "139",
+        },
+        "hd": Object {
+          "height": "1388",
+          "mp4": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy-hd.mp4?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy-hd.mp4",
+          "mp4_size": "409144",
+          "width": "1920",
+        },
+        "original": Object {
+          "frames": "3",
+          "hash": "8b4f0894ae3c31235a56fb6ea3ba06e8",
+          "height": "347",
+          "mp4": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy.mp4?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy.mp4",
+          "mp4_size": "65578",
+          "size": "63193",
+          "url": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy.gif?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy.gif",
+          "webp": "https:\\\\/\\\\/media1.giphy.com\\\\/media\\\\/2fPig3PMSsZqIbq0Tc\\\\/giphy.webp?cid=4a60ab043af3077f5a679962db54a09c17ddc5c6b6fa5d7a&rid=giphy.webp",
+          "webp_size": "60870",
+          "width": "480",
+        },
+        "user": Object {
+          "avatar_url": "https:\\\\/\\\\/media3.giphy.com\\\\/avatars\\\\/carawrrr\\\\/nZ9QpWObQIAE.jpg",
+          "banner_url": "",
+          "display_name": "Carawrrr",
+          "is_verified": true,
+          "profile_url": "https:\\\\/\\\\/giphy.com\\\\/carawrrr\\\\/",
+          "username": "carawrrr",
+        },
+      },
+      "import_datetime": "2018-07-16 15:11:56",
+      "is_sticker": 1,
+      "rating": "g",
+      "slug": "thanks-thank-you-2fPig3PMSsZqIbq0Tc",
+      "source": "www.carawrrr.com",
+      "source_post_url": "www.carawrrr.com",
+      "source_tld": "",
+      "title": "Thanks Thank You Sticker by Carawrrr",
+      "trending_datetime": "2020-03-25 22:00:28",
+      "type": "gif",
+      "url": "https:\\\\/\\\\/giphy.com\\\\/stickers\\\\/thanks-thank-you-2fPig3PMSsZqIbq0Tc",
+      "username": "carawrrr",
+    },
+  },
+}
+`;
+
+exports[`Reducer should return the state without loading 1`] = `
+Object {
+  "isFetching": false,
+  "isFetchingFromTop": false,
+  "posts": Immutable.OrderedMap {},
+}
+`;

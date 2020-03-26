@@ -17,4 +17,12 @@ export type Post = {
   trending_datetime: string,
   import_datetime: string,
   title: string,
+  images: PostImages,
 };
+
+type PostImages = {|
+  preview_gif: {
+    url: string,
+    height: string,
+  },
+|};
