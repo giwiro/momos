@@ -37,6 +37,7 @@ export default function Home(props: Props) {
       Animated.timing(fadeAnim, {
         toValue: 1,
         duration: 1000,
+        useNativeDriver: true,
       }).start();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
